@@ -25,11 +25,20 @@ A full subtractor is a combinational circuit that performs subtraction involving
 
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
-## Procedure
+## Procedure:
+1.Use module projname(input,output) to start the Verilog programmming.
+
+2.Assign inputs and outputs using the word input and output respectively.
+
+3.Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+
+4.Use each output to represent one for difference and the other for borrow.
+
+5.End the verilog program using keyword endmodule.
 
 
 
-Write the detailed procedure here 
+
 
 
 ## Program:
@@ -38,27 +47,54 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: JEEVAGOWTHAM S
 RegisterNumber:  212222230053
 */
+```
+
+
+# HALF SUBRACTOR:
+```
+module half(a,b,s,c);
+input a,b;
+output s,c;
+assign s = a^b;
+assign c = ~a&b;
+endmodule
+
+```
+# FULL SUBRACTOR:
+```
 module half(a,b,bin,diff,borrow);
 input a,b,bin;
 output diff,borrow;
 assign diff = a^b^bin;
 assign borrow = ~a&b | ~(a^b)&bin;
 endmodule
-
-
-
 ```
 ## Output:
 
-## Truthtable
+## Truthtable:
+# HALF SUBRACTOR:
+
+
+# FULL SUBRACTOR:
 
 
 
-##  RTL realization
+
+##  RTL realization:
+# HALF SUBRACTOR:
+![Screenshot 2023-09-08 092815](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/17827900-495b-4677-972c-2e2085779475)
+
+
+# FULL SUBRACTOR:
 ![Screenshot 2023-09-08 092045](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/00593534-1458-44a7-bd2f-4e3498b1fbdc)
 
 
 ## Timing diagram :
+#  HALF SUBRACTOR:
+![Screenshot (124)](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/b1856adf-a799-45de-afaf-c2ab242b1d89)
+
+
+#  FULL SUBRACTOR:
 ![Screenshot (124)](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/f64e7cf8-de59-4af4-a0e8-c03ac70f90cb)
 
 
