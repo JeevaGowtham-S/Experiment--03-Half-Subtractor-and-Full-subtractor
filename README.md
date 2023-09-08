@@ -73,9 +73,11 @@ endmodule
 
 ## Truthtable:
 # HALF SUBRACTOR:
+![HALF SUB](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/b1f0730c-d37b-4061-ada5-c636959d74e1)
 
 
 # FULL SUBRACTOR:
+![FULL SUB](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/aa6110a4-beb0-4bcb-914d-5d66cce1f5b9)
 
 
 
