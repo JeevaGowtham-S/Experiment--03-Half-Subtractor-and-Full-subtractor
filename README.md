@@ -62,13 +62,13 @@ endmodule
 ```
 # FULL SUBRACTOR:
 ```
-module half(a,b,bin,diff,borrow);
+module fsub(a,b,bin,diff,borrow);
 input a,b,bin;
 output diff,borrow;
 assign diff = a^b^bin;
 assign borrow = ~a&b | ~(a^b)&bin;
 endmodule
-```
+
 ## Output:
 
 ## Truthtable:
@@ -93,12 +93,10 @@ endmodule
 
 ## Timing diagram :
 #  HALF SUBRACTOR:
-![Screenshot (124)](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/b1856adf-a799-45de-afaf-c2ab242b1d89)
-
+![Screenshot 2023-11-08 091159](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/dae26ad1-b966-4061-8a76-a11f36078147)
 
 #  FULL SUBRACTOR:
-![Screenshot (124)](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/f64e7cf8-de59-4af4-a0e8-c03ac70f90cb)
-
+![Screenshot 2023-11-08 091208](https://github.com/JeevaGowtham-S/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118042624/b32a0bcb-6af4-477f-9785-64e884606db8)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
